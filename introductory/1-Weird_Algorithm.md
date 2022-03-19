@@ -1,10 +1,10 @@
 # Weird Algorithm
 
-This problem is known as *Collatz conjecture*, *3n + 1* Problem. The question asks us to print out all numbers in this sequence, which is known as **Hailstone Sequence**.
+This problem is also known as *Collatz conjecture*, *3n + 1* Problem. The question asks us to print out all numbers in this sequence, which is known as **Hailstone Sequence**.
 
 There is not a more clever way or a mathematical method to solve this problem. Brute force is the only choice left for us.
 
-There is a point need to mention. If you Google Hailstone Sequence in Google, you can find sometimes the height of the highest number can excess the range of `int`. So, I just `unsigned long long` handle this overflow issue. Because all numbers are positive.
+There is one point I need to mention. If you Google Hailstone Sequence, you can find that sometimes the height of the highest number can excess the range of `int`. So, I use `unsigned long long` to handle this overflow issue. Because all numbers are positive.
 
 ```c++
 #include <bits/stdc++.h>
