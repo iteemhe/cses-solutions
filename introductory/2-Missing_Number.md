@@ -4,7 +4,7 @@ This problem can be solved in linear time with constant space by using a mathema
 
 The given sequence contains $n - 1$ distinct integers in range $[1, n]$, which can be treated as an **Arithmetic Progression**.
 
-By convention, we denote the sum of all integers in $[1, n]$ as $S_n$. If we assume the index of the missing integer is $i$, then the missing number is $a_i$.
+By convention, we denote the sum of all integers in $[1, n]$ as $S_n$, i.e $S_n = \frac{1 + n}{2} \times n$. If we assume the index of the missing integer is $i$, then the missing number is $a_i$.
 
 Then, by finding the sum of integers in the given array, we have the relationship such that $S_n - S_{missing} = a_i$.
 
