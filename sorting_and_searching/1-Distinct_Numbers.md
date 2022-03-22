@@ -22,10 +22,9 @@ int main() {
 }
 
 inline static void solve() {
-    unordered_set<ui> s;
     ull n;
     cin >> n;
-    s.reserve(n);
+    unordered_set<ui> s(n);
     while (n-- > 0) {
         ui num;
         cin >> num;
