@@ -31,3 +31,20 @@ inline static void solve() {
     cout << ans;
 }
 ```
+
+There is actually a $O(logN)$ solution. But since the constraints are pretty low, it would not make much difference.
+
+```c++
+ll pow(const ll &x) {
+    if (x == 1) {
+        return 2;
+    }
+    ll a = pow(x >> 1);
+    return a * a * (x & 1 ? 2 : 1) % mod;
+}
+
+void solve() {
+    cin >> n;
+    cout << pow(n);
+}
+```
